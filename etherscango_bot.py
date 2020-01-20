@@ -1,30 +1,28 @@
 #!/usr/bin/python3
-import os
-import sys
-from threading import Thread
 import logging
-import random
-import time
-import os
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, ConversationHandler,CallbackContext)
-from telegram import Update
-from config import CHAT_ID,TOKEN,YOUR_TELEGRAM_ALIAS,START_INCOMING_BOT,START_WITHDRAWAL_BOT
 
+from config import CHAT_ID,TELEGRAM_TOKEN,\
+    START_INCOMING_BOT,START_WITHDRAWAL_BOT,INTERVAL_INCOMING_BOT, INTERVAL_WITHDRAWAL_BOT
+
+# импортируем ботов
+from etherscango.etherscan_bot import run_etherscan
+from etherscango.withdrawal_bot import run_withdrawal
+from etherscango.tokensend_bot import send_wtp_tokens
 
 
 START, START_TOKENSEND, GETJOB = range(3)
 
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+logging.basicConfig(format='[LINE:%(lineno)d]#%(asctime)s: %(message)s',
                     level=logging.INFO)
-logger = logging.getLogger(__name__)
+logger = logging.getLogger(__file__)
 
 
 def start(update, context):
-    update.message.reply_text('Привет,')
+    update.message.reply_text('Привет, бот запустит 2 задачи автоматически')
     update.message.reply_text('Для запуска tokensend_bot отправьте команду /tokensend')
     update.message.reply_text('Для просмотра очереди задач отправьте команду /jobstat')
-    update.message.reply_text('Для перезапуска бота  отправьте команду /restart')
     return ConversationHandler.END
 
 
@@ -32,29 +30,34 @@ def cancel(update, context):
     update.message.reply_text('Пока')
     return ConversationHandler.END
 
-def callback_tokensend_bot(context: CallbackContext):
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='tokensend_bot start')
-    # send_wtp_tokens()
-    time.sleep(5)
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='tokensend_bot отработал успешно')
 
 def start_tokensend_bot(update, context):
     update.message.reply_text('Добавляем  tokensend_bot  в очередь задач...')
     j = context.job_queue
-    j.run_once(callback_tokensend_bot, when=1)
+    # проверям есть ли такое задание уже в очереди
+    jobs =j.jobs()
+
+    new_job = True
+    if len(jobs) > 0:
+        for i in jobs:
+            if i.name == 'callback_tokensend_bot':
+                update.message.reply_text('Задание tokensend_bot уже есть в очередь')
+                new_job = False
+
+    if new_job:
+        j.run_once(callback_tokensend_bot, when=1)
+        update.message.reply_text('Задание tokensend_bot добавлено в очередь')
     return ConversationHandler.END
 
 def getjob(update,context):
-    update.message.reply_text('Hi you see job runing ..')
+    update.message.reply_text('Список заданий в очереди:')
     j = context.job_queue.jobs()
     if len(j)>0:
-        update.message.reply_text(f'Count job runing {len(j)}:')
+        update.message.reply_text(f'Количество заданий {len(j)}:')
         for i in j:
-            update.message.reply_text(f'job name:{i.name}')
+            update.message.reply_text(f'Имя: {i.name}, интервал запуска: {i.interval_seconds} с')
     else:
-        update.message.reply_text('Not runing jobs')
+        update.message.reply_text('Нет заданий в очереди')
     return ConversationHandler.END
 
 def error(update, context):
@@ -62,43 +65,38 @@ def error(update, context):
     logger.warning(f'Update {update} caused error {context.error}')
 
 
-#------ job ----
-def callback_withdrawal(context: CallbackContext):
-    j = context.job_queue.jobs()
+#------ jobs ----
+def callback_tokensend_bot(context: CallbackContext):
+    context.bot.send_message(chat_id=CHAT_ID, text='~bot: start tokensend_bot')
+    send_wtp_tokens(context)
     context.bot.send_message(chat_id=CHAT_ID,
-                             text='withdrawal: start')
-    t = random.randint(1, 12)
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text=f'withdrawal: run {t} c')
-    time.sleep(t)
+                             text='~bot: stop tokensend_bot')
 
-    t =random.randint(2,13)
-    time.sleep(t)
+
+def callback_withdrawal(context: CallbackContext):
+    context.bot.send_message(chat_id=CHAT_ID, text='~bot: start withdrawal ...')
+    run_withdrawal(context)
     context.bot.send_message(chat_id=CHAT_ID,
-                             text=f'withdrawal: stop {t} c')
+                             text=f'~bot: stop withdrawal')
 
 
 def callback_etherscan(context: CallbackContext):
+    context.bot.send_message(chat_id=CHAT_ID,text='~bot: start run_etherscan ...')
+    run_etherscan(context)
     context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan start')
-    time.sleep(random.randint(10,20))
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan run')
-    time.sleep(random.randint(20,30))
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan stop')
+                             text='~bot: stop run_etherscan')
 
 def main():
-    updater = Updater(TOKEN, use_context=True)
+    updater = Updater(TELEGRAM_TOKEN, use_context=True)
     job_queue = updater.job_queue
 
     # Запускаем нужных ботов в очередь задач
     if START_INCOMING_BOT:
         logger.info('Add incoming_bot to job queue ')
-        job_queue.run_repeating(callback_etherscan, interval=60*3, first=0)
+        job_queue.run_repeating(callback_etherscan, interval=INTERVAL_INCOMING_BOT, first=0)
     if START_WITHDRAWAL_BOT:
         logger.info('Add withdrawal_bot to job queue ')
-        job_queue.run_repeating(callback_withdrawal, interval=60*5, first=0)
+        job_queue.run_repeating(callback_withdrawal, interval=INTERVAL_WITHDRAWAL_BOT, first=0)
 
     dp = updater.dispatcher
     start_handler = ConversationHandler(
@@ -128,31 +126,10 @@ def main():
     )
     dp.add_handler(jobstat_handler)
 
-    #-------bot's service handlers
-    def stop_and_restart():
-        """Gracefully stop the Updater and replace the current process with a new one"""
-        updater.stop()
-        os.execl(sys.executable, sys.executable, *sys.argv)
-
-    def restart(update,context ):
-        update.message.reply_text('Bot is restarting...')
-        Thread(target=stop_and_restart).start()
-        update.message.reply_text('Bot had been restarted!')
-
-    restart_handler = ConversationHandler(
-        entry_points=[CommandHandler('restart', restart)],
-        states={
-            GETJOB: [MessageHandler(Filters.text, restart)]
-        },
-        fallbacks=[CommandHandler('cancel', cancel)]
-    )
-
-    dp.add_handler(restart_handler)
     dp.add_error_handler(error)
 
     updater.start_polling()
     updater.idle()
-
 
 if __name__ == '__main__':
     main()
