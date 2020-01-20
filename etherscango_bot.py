@@ -88,16 +88,6 @@ def callback_etherscan(context: CallbackContext):
     context.bot.send_message(chat_id=CHAT_ID,
                              text='callback_etherscan stop')
 
-def callback_etherscan1(context: CallbackContext):
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan start')
-    time.sleep(random.randint(10,20))
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan run')
-    time.sleep(random.randint(20,30))
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='callback_etherscan stop')
-
 def main():
     updater = Updater(TOKEN, use_context=True)
     job_queue = updater.job_queue
