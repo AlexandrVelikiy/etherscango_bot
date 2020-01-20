@@ -110,7 +110,6 @@ def main():
         logger.info('Add withdrawal_bot to job queue ')
         job_queue.run_repeating(callback_withdrawal, interval=60*5, first=0)
 
-
     dp = updater.dispatcher
     start_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
