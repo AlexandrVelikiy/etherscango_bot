@@ -123,44 +123,45 @@ def chek_receipt_transaction(context=None):
         session.close()
 
 def send_wtp_tokens(context=None):
-    global out_nonce
-    global all_trans_compleate
-
-    out_nonce = w3.eth.getTransactionCount(out_wallet)
-    logger.info(f'out_wallet nouce {out_nonce}')
-
-    contract_address=Web3.toChecksumAddress(CONTRACT_ADD)
-
     try:
-        contract_abi = json.loads(open(ABI_FILE_PATH,"r").read())
-    except:
-        logger.info(f'ABI file {ABI_FILE_PATH} not found')
-        return False
+        global out_nonce
+        global all_trans_compleate
 
-    contract = w3.eth.contract(address=contract_address, abi=contract_abi)
-    decimal = contract.functions.decimals().call()
-    out_wallet_balance = contract.functions.balanceOf(Web3.toChecksumAddress(out_wallet)).call()
-    eth_balance = w3.eth.getBalance(Web3.toChecksumAddress(out_wallet))
+        out_nonce = w3.eth.getTransactionCount(out_wallet)
+        logger.info(f'out_wallet nouce {out_nonce}')
 
-    logger.info(f'Out wallet balance {out_wallet_balance}')
-    logger.info(f"Eth balance: {eth_balance}")
+        contract_address=Web3.toChecksumAddress(CONTRACT_ADD)
 
-    session = connect_to_db(SQLALCHEMY_DATABASE_URI)
+        try:
+            contract_abi = json.loads(open(ABI_FILE_PATH,"r").read())
+        except:
+            logger.info(f'ABI file {ABI_FILE_PATH} not found')
+            return False
 
-    withdrawals = session.query(Withdrawals).filter(Withdrawals.status == 0).all()
+        contract = w3.eth.contract(address=contract_address, abi=contract_abi)
+        decimal = contract.functions.decimals().call()
+        out_wallet_balance = contract.functions.balanceOf(Web3.toChecksumAddress(out_wallet)).call()
+        eth_balance = w3.eth.getBalance(Web3.toChecksumAddress(out_wallet))
 
-    message  = f'In table Withdrawals found {len(withdrawals)} wallets'
-    logger.info(message)
-    if context:
-        context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: '+ message)
+        logger.info(f'Out wallet balance {out_wallet_balance}')
+        logger.info(f"Eth balance: {eth_balance}")
 
-    if len(withdrawals) < 1:
-        # нет пожходящих транзакций
-        all_trans_compleate = True
-        return False
+        session = connect_to_db(SQLALCHEMY_DATABASE_URI)
 
-    nonce = w3.eth.getTransactionCount(Web3.toChecksumAddress(out_wallet))
-    try:
+        withdrawals = session.query(Withdrawals).filter(Withdrawals.status == 0).all()
+
+        message  = f'In table Withdrawals found {len(withdrawals)} wallets'
+        logger.info(message)
+        if context:
+            context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: '+ message)
+
+        if len(withdrawals) < 1:
+            # нет пожходящих транзакций
+            all_trans_compleate = True
+            return False
+
+        nonce = w3.eth.getTransactionCount(Web3.toChecksumAddress(out_wallet))
+
         for i, w in enumerate(withdrawals):
             time.sleep(TIME_OUT)
 

@@ -1,0 +1,624 @@
+[LINE:81]#2020-01-20 21:51:55,538: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-20 21:51:56,627: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-20 21:51:56,628: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-20 21:51:56,629: All ammount 50.0
+[LINE:51]#2020-01-20 21:51:56,646: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-20 21:51:56,646: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-20 21:51:56,647: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-20 21:51:58,326: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-20 21:51:58,327: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-20 21:51:58,327: All ammount 42.0
+[LINE:51]#2020-01-20 21:51:58,339: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-20 21:51:58,340: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-20 21:51:58,341: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-20 21:51:59,440: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-20 21:51:59,441: Found 20 transaction for user_id=18
+[LINE:47]#2020-01-20 21:51:59,442: All ammount 307.0
+[LINE:51]#2020-01-20 21:51:59,453: Found 4 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-20 21:51:59,454: All ammount in Incoming table 307.0
+[LINE:68]#2020-01-20 21:51:59,454: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-20 21:52:00,542: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-20 21:52:00,542: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-20 21:52:00,551: All ammount 9.0
+[LINE:51]#2020-01-20 21:52:00,554: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-20 21:52:00,554: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-20 21:52:00,554: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-20 21:52:01,636: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-20 21:52:01,637: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-20 21:52:01,638: All ammount 1.0
+[LINE:51]#2020-01-20 21:52:01,647: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-20 21:52:01,647: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:52:01,648: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-20 21:52:02,795: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:52:03,939: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:52:03,940: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:52:03,940: All ammount 3.0
+[LINE:51]#2020-01-20 21:52:03,949: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:52:03,950: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:52:03,950: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-20 21:52:05,038: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-20 21:52:05,039: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-20 21:52:05,039: All ammount 1.0
+[LINE:51]#2020-01-20 21:52:05,041: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-20 21:52:05,041: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:52:05,041: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-20 21:52:06,135: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-20 21:52:07,232: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-20 21:52:07,232: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-20 21:52:07,233: All ammount 2.0
+[LINE:51]#2020-01-20 21:52:07,242: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-20 21:52:07,243: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-20 21:52:07,243: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-20 21:52:09,340: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-20 21:52:09,341: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-20 21:52:09,341: All ammount 2.0
+[LINE:51]#2020-01-20 21:52:09,351: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-20 21:52:09,352: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-20 21:52:09,352: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-20 21:52:10,416: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:52:11,511: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:52:11,512: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:52:11,512: All ammount 3.0
+[LINE:51]#2020-01-20 21:52:11,522: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:52:11,522: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:52:11,523: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-20 21:52:12,650: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-20 21:52:13,753: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-20 21:52:13,754: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-20 21:52:13,754: All ammount 50.0
+[LINE:51]#2020-01-20 21:52:13,764: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-20 21:52:13,764: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-20 21:52:13,765: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-20 21:52:15,685: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-20 21:52:15,685: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-20 21:52:15,685: All ammount 42.0
+[LINE:51]#2020-01-20 21:52:15,688: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-20 21:52:15,688: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-20 21:52:15,688: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-20 21:52:16,798: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-20 21:52:16,799: Found 20 transaction for user_id=18
+[LINE:47]#2020-01-20 21:52:16,800: All ammount 307.0
+[LINE:51]#2020-01-20 21:52:16,810: Found 4 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-20 21:52:16,811: All ammount in Incoming table 307.0
+[LINE:68]#2020-01-20 21:52:16,811: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-20 21:52:17,899: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-20 21:52:17,899: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-20 21:52:17,900: All ammount 9.0
+[LINE:51]#2020-01-20 21:52:17,904: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-20 21:52:17,905: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-20 21:52:17,905: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-20 21:52:18,998: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-20 21:52:18,999: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-20 21:52:19,000: All ammount 1.0
+[LINE:51]#2020-01-20 21:52:19,009: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-20 21:52:19,009: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:52:19,010: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-20 21:52:20,104: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:52:21,200: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:52:21,201: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:52:21,202: All ammount 3.0
+[LINE:51]#2020-01-20 21:52:21,211: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:52:21,212: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:52:21,212: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-20 21:52:22,295: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-20 21:52:22,546: compleat
+[LINE:81]#2020-01-20 21:58:52,740: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-20 21:58:54,447: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-20 21:58:54,447: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-20 21:58:54,448: All ammount 50.0
+[LINE:51]#2020-01-20 21:58:54,461: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-20 21:58:54,461: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-20 21:58:54,461: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-20 21:58:55,546: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-20 21:58:55,546: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-20 21:58:55,546: All ammount 42.0
+[LINE:51]#2020-01-20 21:58:55,549: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-20 21:58:55,549: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-20 21:58:55,549: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-20 21:58:56,644: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-20 21:58:56,644: Found 20 transaction for user_id=18
+[LINE:47]#2020-01-20 21:58:56,645: All ammount 307.0
+[LINE:51]#2020-01-20 21:58:56,651: Found 4 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-20 21:58:56,651: All ammount in Incoming table 307.0
+[LINE:68]#2020-01-20 21:58:56,652: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-20 21:58:57,751: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-20 21:58:57,752: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-20 21:58:57,753: All ammount 9.0
+[LINE:51]#2020-01-20 21:58:57,759: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-20 21:58:57,759: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-20 21:58:57,759: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-20 21:59:00,013: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-20 21:59:00,013: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-20 21:59:00,014: All ammount 1.0
+[LINE:51]#2020-01-20 21:59:00,022: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-20 21:59:00,023: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:59:00,023: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-20 21:59:01,108: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:59:02,230: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:59:02,231: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:59:02,231: All ammount 3.0
+[LINE:51]#2020-01-20 21:59:02,237: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:59:02,237: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:59:02,237: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-20 21:59:03,336: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-20 21:59:03,337: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-20 21:59:03,338: All ammount 1.0
+[LINE:51]#2020-01-20 21:59:03,342: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-20 21:59:03,343: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:59:03,343: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-20 21:59:04,423: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-20 21:59:05,534: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-20 21:59:05,534: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-20 21:59:05,535: All ammount 2.0
+[LINE:51]#2020-01-20 21:59:05,541: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-20 21:59:05,541: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-20 21:59:05,541: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-20 21:59:07,234: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-20 21:59:07,235: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-20 21:59:07,235: All ammount 2.0
+[LINE:51]#2020-01-20 21:59:07,240: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-20 21:59:07,240: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-20 21:59:07,241: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-20 21:59:08,309: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:59:09,391: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:59:09,392: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:59:09,392: All ammount 3.0
+[LINE:51]#2020-01-20 21:59:09,426: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:59:09,426: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:59:09,426: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-20 21:59:10,516: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-20 21:59:11,614: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-20 21:59:11,614: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-20 21:59:11,614: All ammount 50.0
+[LINE:51]#2020-01-20 21:59:11,617: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-20 21:59:11,617: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-20 21:59:11,617: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-20 21:59:13,542: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-20 21:59:13,543: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-20 21:59:13,544: All ammount 42.0
+[LINE:51]#2020-01-20 21:59:13,549: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-20 21:59:13,550: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-20 21:59:13,550: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-20 21:59:14,632: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-20 21:59:14,633: Found 20 transaction for user_id=18
+[LINE:47]#2020-01-20 21:59:14,634: All ammount 307.0
+[LINE:51]#2020-01-20 21:59:14,639: Found 4 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-20 21:59:14,639: All ammount in Incoming table 307.0
+[LINE:68]#2020-01-20 21:59:14,640: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-20 21:59:15,720: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-20 21:59:15,720: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-20 21:59:15,721: All ammount 9.0
+[LINE:51]#2020-01-20 21:59:15,730: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-20 21:59:15,730: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-20 21:59:15,731: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-20 21:59:16,813: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-20 21:59:16,813: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-20 21:59:16,814: All ammount 1.0
+[LINE:51]#2020-01-20 21:59:16,816: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-20 21:59:16,816: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-20 21:59:16,816: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-20 21:59:17,907: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-20 21:59:19,887: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-20 21:59:19,887: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-20 21:59:19,887: All ammount 3.0
+[LINE:51]#2020-01-20 21:59:19,890: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-20 21:59:19,890: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-20 21:59:19,890: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-20 21:59:21,970: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-20 21:59:22,221: compleat
+[LINE:81]#2020-01-21 19:51:42,333: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-21 19:51:43,906: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 19:51:43,907: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 19:51:43,908: All ammount 50.0
+[LINE:51]#2020-01-21 19:51:43,916: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 19:51:43,916: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 19:51:43,917: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 19:51:44,899: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 19:51:44,900: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 19:51:44,900: All ammount 42.0
+[LINE:51]#2020-01-21 19:51:44,905: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 19:51:44,906: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 19:51:44,906: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 19:51:45,902: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 19:51:45,903: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 19:51:45,903: All ammount 607.0
+[LINE:51]#2020-01-21 19:51:45,908: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 19:51:45,909: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 19:51:45,909: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 19:51:48,053: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 19:51:48,054: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 19:51:48,054: All ammount 9.0
+[LINE:51]#2020-01-21 19:51:48,056: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 19:51:48,056: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 19:51:48,056: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 19:51:49,020: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 19:51:49,020: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 19:51:49,021: All ammount 1.0
+[LINE:51]#2020-01-21 19:51:49,023: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 19:51:49,023: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 19:51:49,023: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 19:51:49,989: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 19:51:50,974: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 19:51:50,975: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 19:51:50,975: All ammount 3.0
+[LINE:51]#2020-01-21 19:51:50,982: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 19:51:50,982: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 19:51:50,983: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-21 19:51:51,959: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-21 19:51:51,960: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-21 19:51:51,960: All ammount 1.0
+[LINE:51]#2020-01-21 19:51:51,967: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-21 19:51:51,968: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 19:51:51,968: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-21 19:51:52,961: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 19:51:53,960: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-21 19:51:53,960: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-21 19:51:53,961: All ammount 2.0
+[LINE:51]#2020-01-21 19:51:53,965: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-21 19:51:53,966: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 19:51:53,966: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-21 19:51:54,946: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-21 19:51:54,946: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-21 19:51:54,947: All ammount 2.0
+[LINE:51]#2020-01-21 19:51:54,952: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-21 19:51:54,953: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 19:51:54,953: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-21 19:51:56,942: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 19:51:57,934: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 19:51:57,935: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 19:51:57,935: All ammount 3.0
+[LINE:51]#2020-01-21 19:51:57,936: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 19:51:57,936: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 19:51:57,936: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 19:51:58,970: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 19:51:59,944: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 19:51:59,945: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 19:51:59,945: All ammount 50.0
+[LINE:51]#2020-01-21 19:51:59,946: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 19:51:59,946: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 19:51:59,947: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 19:52:00,960: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 19:52:00,960: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 19:52:00,961: All ammount 42.0
+[LINE:51]#2020-01-21 19:52:00,965: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 19:52:00,966: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 19:52:00,966: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 19:52:01,948: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 19:52:01,948: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 19:52:01,949: All ammount 607.0
+[LINE:51]#2020-01-21 19:52:01,954: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 19:52:01,954: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 19:52:01,955: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 19:52:02,925: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 19:52:02,926: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 19:52:02,926: All ammount 9.0
+[LINE:51]#2020-01-21 19:52:02,931: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 19:52:02,931: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 19:52:02,932: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 19:52:03,926: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 19:52:03,926: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 19:52:03,927: All ammount 1.0
+[LINE:51]#2020-01-21 19:52:03,928: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 19:52:03,928: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 19:52:03,928: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 19:52:04,930: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 19:52:05,910: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 19:52:05,910: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 19:52:05,911: All ammount 3.0
+[LINE:51]#2020-01-21 19:52:05,915: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 19:52:05,916: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 19:52:05,916: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 19:52:06,893: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-21 19:52:07,144: compleat
+[LINE:81]#2020-01-21 20:36:43,897: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-21 20:36:44,833: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:36:44,833: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:36:44,833: All ammount 50.0
+[LINE:51]#2020-01-21 20:36:44,841: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:36:44,841: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:36:44,841: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:36:46,029: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:36:46,029: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:36:46,029: All ammount 42.0
+[LINE:51]#2020-01-21 20:36:46,031: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:36:46,032: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:36:46,032: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:36:47,006: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:36:47,006: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:36:47,007: All ammount 607.0
+[LINE:51]#2020-01-21 20:36:47,012: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:36:47,012: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:36:47,013: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:36:47,987: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:36:47,988: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:36:47,988: All ammount 9.0
+[LINE:51]#2020-01-21 20:36:47,992: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:36:47,993: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:36:47,993: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:36:48,967: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:36:48,968: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:36:48,968: All ammount 1.0
+[LINE:51]#2020-01-21 20:36:48,972: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:36:48,973: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:36:48,973: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:36:49,964: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:36:50,952: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:36:50,953: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:36:50,953: All ammount 3.0
+[LINE:51]#2020-01-21 20:36:50,960: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:36:50,961: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:36:50,961: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-21 20:36:51,953: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-21 20:36:51,953: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-21 20:36:51,954: All ammount 1.0
+[LINE:51]#2020-01-21 20:36:51,958: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-21 20:36:51,958: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:36:51,959: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-21 20:36:52,935: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:36:53,906: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-21 20:36:53,907: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-21 20:36:53,907: All ammount 2.0
+[LINE:51]#2020-01-21 20:36:53,908: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-21 20:36:53,908: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:36:53,908: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-21 20:36:54,891: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-21 20:36:54,892: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-21 20:36:54,892: All ammount 2.0
+[LINE:51]#2020-01-21 20:36:54,894: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-21 20:36:54,894: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:36:54,894: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-21 20:36:56,890: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:36:57,877: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:36:57,877: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:36:57,877: All ammount 3.0
+[LINE:51]#2020-01-21 20:36:57,878: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:36:57,879: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:36:57,879: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:36:58,863: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:36:59,832: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:36:59,832: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:36:59,833: All ammount 50.0
+[LINE:51]#2020-01-21 20:36:59,834: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:36:59,834: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:36:59,834: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:37:00,815: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:37:00,815: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:37:00,816: All ammount 42.0
+[LINE:51]#2020-01-21 20:37:00,817: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:37:00,817: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:37:00,817: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:37:01,801: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:37:01,801: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:37:01,801: All ammount 607.0
+[LINE:51]#2020-01-21 20:37:01,806: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:37:01,807: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:37:01,807: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:37:02,781: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:37:02,781: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:37:02,782: All ammount 9.0
+[LINE:51]#2020-01-21 20:37:02,783: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:37:02,783: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:37:02,783: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:37:03,749: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:37:03,750: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:37:03,750: All ammount 1.0
+[LINE:51]#2020-01-21 20:37:03,751: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:37:03,751: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:37:03,751: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:37:04,734: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:37:05,717: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:37:05,718: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:37:05,718: All ammount 3.0
+[LINE:51]#2020-01-21 20:37:05,719: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:37:05,719: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:37:05,719: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:37:06,701: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-21 20:37:06,952: compleat
+[LINE:81]#2020-01-21 20:41:43,865: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-21 20:41:44,729: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:41:44,730: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:41:44,730: All ammount 50.0
+[LINE:51]#2020-01-21 20:41:44,735: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:41:44,736: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:41:44,736: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:41:45,713: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:41:45,714: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:41:45,714: All ammount 42.0
+[LINE:51]#2020-01-21 20:41:45,719: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:41:45,719: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:41:45,720: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:41:46,716: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:41:46,717: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:41:46,717: All ammount 607.0
+[LINE:51]#2020-01-21 20:41:46,723: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:41:46,724: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:41:46,724: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:41:47,711: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:41:47,711: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:41:47,711: All ammount 9.0
+[LINE:51]#2020-01-21 20:41:47,716: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:41:47,716: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:41:47,717: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:41:48,694: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:41:48,695: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:41:48,695: All ammount 1.0
+[LINE:51]#2020-01-21 20:41:48,700: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:41:48,700: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:41:48,700: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:41:49,678: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:41:50,664: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:41:50,665: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:41:50,665: All ammount 3.0
+[LINE:51]#2020-01-21 20:41:50,670: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:41:50,670: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:41:50,671: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-21 20:41:51,649: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-21 20:41:51,649: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-21 20:41:51,650: All ammount 1.0
+[LINE:51]#2020-01-21 20:41:51,655: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-21 20:41:51,655: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:41:51,655: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-21 20:41:52,633: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:41:53,617: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-21 20:41:53,617: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-21 20:41:53,617: All ammount 2.0
+[LINE:51]#2020-01-21 20:41:53,623: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-21 20:41:53,624: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:41:53,624: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-21 20:41:54,617: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-21 20:41:54,617: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-21 20:41:54,618: All ammount 2.0
+[LINE:51]#2020-01-21 20:41:54,625: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-21 20:41:54,626: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:41:54,627: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-21 20:41:57,942: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:41:58,905: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:41:58,905: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:41:58,905: All ammount 3.0
+[LINE:51]#2020-01-21 20:41:58,910: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:41:58,911: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:41:58,912: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:41:59,894: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:42:00,913: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:42:00,914: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:42:00,914: All ammount 50.0
+[LINE:51]#2020-01-21 20:42:00,916: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:42:00,917: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:42:00,917: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:42:01,912: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:42:01,913: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:42:01,913: All ammount 42.0
+[LINE:51]#2020-01-21 20:42:01,918: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:42:01,918: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:42:01,919: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:42:03,548: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:42:03,548: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:42:03,549: All ammount 607.0
+[LINE:51]#2020-01-21 20:42:03,554: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:42:03,554: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:42:03,555: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:42:04,536: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:42:04,537: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:42:04,537: All ammount 9.0
+[LINE:51]#2020-01-21 20:42:04,542: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:42:04,542: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:42:04,542: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:42:05,545: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:42:05,546: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:42:05,547: All ammount 1.0
+[LINE:51]#2020-01-21 20:42:05,551: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:42:05,552: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:42:05,552: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:42:06,535: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:42:07,503: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:42:07,504: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:42:07,504: All ammount 3.0
+[LINE:51]#2020-01-21 20:42:07,508: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:42:07,509: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:42:07,509: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:42:08,706: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-21 20:42:08,957: compleat
+[LINE:81]#2020-01-21 20:51:42,747: ~ start repeat, found 22 user wallets
+[LINE:100]#2020-01-21 20:51:43,612: ~1: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:51:43,613: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:51:43,613: All ammount 50.0
+[LINE:51]#2020-01-21 20:51:43,621: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:51:43,622: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:51:43,622: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:51:44,593: ~2: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:51:44,593: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:51:44,594: All ammount 42.0
+[LINE:51]#2020-01-21 20:51:44,598: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:51:44,599: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:51:44,599: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:51:45,804: ~3: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:51:45,804: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:51:45,805: All ammount 607.0
+[LINE:51]#2020-01-21 20:51:45,808: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:51:45,808: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:51:45,808: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:51:46,793: ~4: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:51:46,794: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:51:46,794: All ammount 9.0
+[LINE:51]#2020-01-21 20:51:46,799: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:51:46,799: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:51:46,799: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:51:47,798: ~5: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:51:47,798: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:51:47,799: All ammount 1.0
+[LINE:51]#2020-01-21 20:51:47,803: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:51:47,804: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:51:47,804: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:51:49,171: ~6: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:51:50,180: ~7: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:51:50,181: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:51:50,182: All ammount 3.0
+[LINE:51]#2020-01-21 20:51:50,186: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:51:50,186: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:51:50,187: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:100]#2020-01-21 20:51:51,543: ~8: Found tranzaction for 0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:36]#2020-01-21 20:51:51,543: Found 2 transaction for user_id=23
+[LINE:47]#2020-01-21 20:51:51,544: All ammount 1.0
+[LINE:51]#2020-01-21 20:51:51,545: Found 1 rect in Incoming table for user_id 23 and bot=1
+[LINE:54]#2020-01-21 20:51:51,546: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:51:51,546: No new transactions: user_id=23, wallet=0xB124D2A6Fb7ab631F1CA73ba2D0E508402494DA8
+[LINE:103]#2020-01-21 20:51:52,544: ~9: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:51:54,138: ~10: Found tranzaction for 0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:36]#2020-01-21 20:51:54,138: Found 3 transaction for user_id=66
+[LINE:47]#2020-01-21 20:51:54,139: All ammount 2.0
+[LINE:51]#2020-01-21 20:51:54,143: Found 1 rect in Incoming table for user_id 66 and bot=1
+[LINE:54]#2020-01-21 20:51:54,144: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:51:54,144: No new transactions: user_id=66, wallet=0x970f89024bcCCe175959A634e21B90081EBa2f7A
+[LINE:100]#2020-01-21 20:51:55,117: ~11: Found tranzaction for 0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:36]#2020-01-21 20:51:55,117: Found 4 transaction for user_id=111
+[LINE:47]#2020-01-21 20:51:55,118: All ammount 2.0
+[LINE:51]#2020-01-21 20:51:55,120: Found 1 rect in Incoming table for user_id 111 and bot=1
+[LINE:54]#2020-01-21 20:51:55,120: All ammount in Incoming table 2.0
+[LINE:68]#2020-01-21 20:51:55,120: No new transactions: user_id=111, wallet=0xc20A823fDe761a737AC155dd25414063BA3Ba9E7
+[LINE:103]#2020-01-21 20:51:56,105: ~12: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:51:57,483: ~13: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:51:57,483: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:51:57,484: All ammount 3.0
+[LINE:51]#2020-01-21 20:51:57,489: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:51:57,490: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:51:57,490: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:51:58,481: ~14: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:100]#2020-01-21 20:51:59,702: ~15: Found tranzaction for 0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:36]#2020-01-21 20:51:59,702: Found 22 transaction for user_id=16
+[LINE:47]#2020-01-21 20:51:59,702: All ammount 50.0
+[LINE:51]#2020-01-21 20:51:59,704: Found 1 rect in Incoming table for user_id 16 and bot=1
+[LINE:54]#2020-01-21 20:51:59,705: All ammount in Incoming table 50.0
+[LINE:68]#2020-01-21 20:51:59,705: No new transactions: user_id=16, wallet=0x826fBD6116aBc377f5637da9fF19A983e31cc769
+[LINE:100]#2020-01-21 20:52:01,404: ~16: Found tranzaction for 0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:36]#2020-01-21 20:52:01,404: Found 5 transaction for user_id=1
+[LINE:47]#2020-01-21 20:52:01,405: All ammount 42.0
+[LINE:51]#2020-01-21 20:52:01,410: Found 1 rect in Incoming table for user_id 1 and bot=1
+[LINE:54]#2020-01-21 20:52:01,410: All ammount in Incoming table 42.0
+[LINE:68]#2020-01-21 20:52:01,410: No new transactions: user_id=1, wallet=0x859B3B25fdAC92011A7530Dabed1A3bdda53cB76
+[LINE:100]#2020-01-21 20:52:02,795: ~17: Found tranzaction for 0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:36]#2020-01-21 20:52:02,796: Found 26 transaction for user_id=18
+[LINE:47]#2020-01-21 20:52:02,797: All ammount 607.0
+[LINE:51]#2020-01-21 20:52:02,802: Found 5 rect in Incoming table for user_id 18 and bot=1
+[LINE:54]#2020-01-21 20:52:02,802: All ammount in Incoming table 607.0
+[LINE:68]#2020-01-21 20:52:02,802: No new transactions: user_id=18, wallet=0x4A8dd2Dc8407C98221959fFBbc13b18321b9019e
+[LINE:100]#2020-01-21 20:52:03,792: ~18: Found tranzaction for 0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:36]#2020-01-21 20:52:03,792: Found 4 transaction for user_id=19
+[LINE:47]#2020-01-21 20:52:03,792: All ammount 9.0
+[LINE:51]#2020-01-21 20:52:03,794: Found 1 rect in Incoming table for user_id 19 and bot=1
+[LINE:54]#2020-01-21 20:52:03,794: All ammount in Incoming table 9.0
+[LINE:68]#2020-01-21 20:52:03,794: No new transactions: user_id=19, wallet=0x0a4Cf605398d44E338d62EE89F23c228a79Cadd8
+[LINE:100]#2020-01-21 20:52:05,001: ~19: Found tranzaction for 0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:36]#2020-01-21 20:52:05,001: Found 1 transaction for user_id=20
+[LINE:47]#2020-01-21 20:52:05,002: All ammount 1.0
+[LINE:51]#2020-01-21 20:52:05,006: Found 1 rect in Incoming table for user_id 20 and bot=1
+[LINE:54]#2020-01-21 20:52:05,007: All ammount in Incoming table 1.0
+[LINE:68]#2020-01-21 20:52:05,007: No new transactions: user_id=20, wallet=0xa9164E8C62a83A43a9f2E9Adaca0017647863B55
+[LINE:103]#2020-01-21 20:52:05,963: ~20: Not found tranzaction for 0x0AeeDED13934D1E0BC74E98AF6B2b3366dBD5400
+[LINE:100]#2020-01-21 20:52:06,949: ~21: Found tranzaction for 0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:36]#2020-01-21 20:52:06,950: Found 1 transaction for user_id=22
+[LINE:47]#2020-01-21 20:52:06,950: All ammount 3.0
+[LINE:51]#2020-01-21 20:52:06,955: Found 1 rect in Incoming table for user_id 22 and bot=1
+[LINE:54]#2020-01-21 20:52:06,955: All ammount in Incoming table 3.0
+[LINE:68]#2020-01-21 20:52:06,955: No new transactions: user_id=22, wallet=0xF2875B3F6340858dfbae07bD17246b6A0fd3A233
+[LINE:103]#2020-01-21 20:52:08,974: ~22: Not found tranzaction for 0x2Fe1f754F0c3024B55249B2f4636884Fc861215a
+[LINE:110]#2020-01-21 20:52:09,225: compleat
