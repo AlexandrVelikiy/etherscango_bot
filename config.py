@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 MASTERPASS="JL5rslduQE3c38od"
-ETH_NODE ='https://mainnet.infura.io/ca7647192cca4daf8193b9bae3921910'
+ETH_NODE = 'https://mainnet.infura.io/v3/579dff22939f472199392c37f11db0a5'#'https://mainnet.infura.io/ca7647192cca4daf8193b9bae3921910'
+
 ABI_FILE_PATH = '/home/alex/proj/etherscango_bot/json.abi'
 
 CONTRACT_ADD = '0x1680CfdAD75dA2bb56Ded4f36BB9423C86ffa7B7'
@@ -16,10 +17,12 @@ ETHERSCAN_TOKEN = '5UZG48NFB3PF1SCU83V2I9UXEHKHSRQYFT'
 TIME_OUT = 0.25 # ограничим не более 4-х запросов в секунду
 TOKENSEND_TIME_OUT = 1
 TIME_OUT_AFTER_HTTPERROR_429 = 45 # пауза после ошибки
-TIME_OUT_BETWEEN_REPEAT = 60
-
+TIME_OUT_BETWEEN_REPEAT = 60 # тайм аут между повторным и запусками withdrawal и etherscan
+TIME_OUT_AFTER_REPLAY =  60 # пауза между поторными запросами на подтверждение транзакции для withdrawal_bot
 # для withdrawel
 TIME_OUT_TRANS_RECEIPT = 30
+# таймаут для запроса баланса холожного кошелька
+TIME_OUT_GET_COLD_BALANC = 30
 
 # доступ к базе
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://alex:passw0rd159@localhost/wtp_mining'

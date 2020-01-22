@@ -7,9 +7,9 @@ from datetime import datetime
 import logging
 import logging.handlers
 from config import DEBUG,ETHERSCAN_TOKEN,TIME_OUT,TIME_OUT_BETWEEN_REPEAT,SQLALCHEMY_DATABASE_URI,LOG_PATH,ETHERSCAN_TOKEN
-from config import CHAT_ID
+from config import CHAT_ID,TELEGRAM_TOKEN
 
-from etherscango.models import Wallets,Incoming, User_wallets, connect_to_db
+from models import Wallets,Incoming, User_wallets, connect_to_db
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -29,8 +29,14 @@ else:
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
+def send_message(text):
+    try:
+        url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage?chat_id={CHAT_ID}&text={text}'
+        res = requests.get(url)
+    except:
+        logger.exception('send_message')
 
-def update_data(data,wallet,user_id,session,context=None):
+def update_data(data,wallet,user_id,session):
     try:
         new_amount = 0.0
         logger.info('Found {} transaction for user_id={}'.format(len(data),user_id))
@@ -61,8 +67,7 @@ def update_data(data,wallet,user_id,session,context=None):
             session.commit()
             message = f'Add to Incoming table: user_id={user_id}, wallet={wallet}, amount={amount}'
             logger.info(message)
-            if context:
-                context.bot.send_message(chat_id=CHAT_ID, text='etherscan_bot: '+message)
+            send_message(f'etherscan_bot said: Пользователь {user_id} пополнил баланс на {amount} WTP')
         else:
             message = f'No new transactions: user_id={user_id}, wallet={wallet}'
             logger.info(message)
@@ -71,7 +76,7 @@ def update_data(data,wallet,user_id,session,context=None):
         logger.exception(e)
 
 
-def run_etherscan(context=None):
+def run_etherscan():
     try:
 
         session = connect_to_db(SQLALCHEMY_DATABASE_URI)
@@ -79,8 +84,6 @@ def run_etherscan(context=None):
             all = session.query(User_wallets).all()
             message = f'~ start repeat, found {len(all)} user wallets'
             logger.info(message)
-            if context:
-                context.bot.send_message(chat_id=CHAT_ID, text='etherscan_bot: '+message)
 
             for i, r in enumerate(all):
                 api_url = f'https://api.etherscan.io/api?module=account&action=tokentx&contractaddress=' \
@@ -98,7 +101,7 @@ def run_etherscan(context=None):
                         status = data.get('status')
                         if status == '1':
                             logger.info(f'~{i + 1}: Found tranzaction for {r.wallet}')
-                            update_data(data.get('result'), r.wallet, r.user_id, session,context)
+                            update_data(data.get('result'), r.wallet, r.user_id, session)
                         else:
                             logger.info(f'~{i + 1}: Not found tranzaction for {r.wallet}')
                 else:
@@ -108,19 +111,16 @@ def run_etherscan(context=None):
 
             message = f'compleat'
             logger.info(message)
-            if context:
-                context.bot.send_message(chat_id=CHAT_ID, text='etherscan_bot: '+message)
-
         else:
             logger.error('session not open')
     except:
-        logger.exception('main')
+        logger.exception('run_etherscan')
 
 
 
 def main():
     try:
-        print('Start etherscan_bot ...')
+        logger.info('Start etherscan_bot ...')
         while True:
             run_etherscan()
             time.sleep(TIME_OUT_BETWEEN_REPEAT)

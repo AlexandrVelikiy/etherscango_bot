@@ -2,16 +2,14 @@
 import logging
 from telegram.ext import (Updater, CommandHandler, MessageHandler, Filters, ConversationHandler,CallbackContext)
 
-from config import CHAT_ID,TELEGRAM_TOKEN,\
-    START_INCOMING_BOT,START_WITHDRAWAL_BOT,INTERVAL_INCOMING_BOT, INTERVAL_WITHDRAWAL_BOT
+from config import CHAT_ID,TELEGRAM_TOKEN, TIME_OUT_GET_COLD_BALANC
 
 # импортируем ботов
-from etherscango.etherscan_bot import run_etherscan
-from etherscango.withdrawal_bot import run_withdrawal
 from etherscango.tokensend_bot import send_wtp_tokens
+from etherscango.get_balance_cold_wallet import get_cold_walet_balance
 
 
-START, START_TOKENSEND, GETJOB = range(3)
+START, START_TOKENSEND, GETJOB, GETBAL = range(4)
 
 
 logging.basicConfig(format='[LINE:%(lineno)d]#%(asctime)s: %(message)s',
@@ -20,8 +18,9 @@ logger = logging.getLogger(__file__)
 
 
 def start(update, context):
-    update.message.reply_text('Привет, бот запустит 2 задачи автоматически')
+    update.message.reply_text('Привет!')
     update.message.reply_text('Для запуска tokensend_bot отправьте команду /tokensend')
+    update.message.reply_text('Для запуска просмотра баланса холодного кошелька отправьте команду /getbalabce')
     update.message.reply_text('Для просмотра очереди задач отправьте команду /jobstat')
     return ConversationHandler.END
 
@@ -30,6 +29,23 @@ def cancel(update, context):
     update.message.reply_text('Пока')
     return ConversationHandler.END
 
+def start_getbalance_bot(update, context):
+    update.message.reply_text('Добавляем  get_cold_wallet_balance  в очередь задач...')
+    j = context.job_queue
+    # проверям есть ли такое задание уже в очереди
+    jobs = j.jobs()
+
+    new_job = True
+    if len(jobs) > 0:
+        for i in jobs:
+            if i.name == 'get_cold_walet_balance':
+                update.message.reply_text('Задание get_cold_walet_balance уже есть в очередь')
+                new_job = False
+
+    if new_job:
+        j.run_once(callback_get_cold_walet_balance, when=1)
+        update.message.reply_text('Задание get_cold_walet_balance добавлено в очередь')
+    return ConversationHandler.END
 
 def start_tokensend_bot(update, context):
     update.message.reply_text('Добавляем  tokensend_bot  в очередь задач...')
@@ -67,36 +83,18 @@ def error(update, context):
 
 #------ jobs ----
 def callback_tokensend_bot(context: CallbackContext):
-    context.bot.send_message(chat_id=CHAT_ID, text='~bot: start tokensend_bot')
-    send_wtp_tokens(context)
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='~bot: stop tokensend_bot')
+    send_wtp_tokens()
+    # запускаем запрос баланса холодного кошелька через интервал  TIME_OUT_GET_COLD_BALANC
+    j = context.job_queue
+    j.run_once(callback_get_cold_walet_balance, TIME_OUT_GET_COLD_BALANC)
 
 
-def callback_withdrawal(context: CallbackContext):
-    context.bot.send_message(chat_id=CHAT_ID, text='~bot: start withdrawal ...')
-    run_withdrawal(context)
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text=f'~bot: stop withdrawal')
-
-
-def callback_etherscan(context: CallbackContext):
-    context.bot.send_message(chat_id=CHAT_ID,text='~bot: start run_etherscan ...')
-    run_etherscan(context)
-    context.bot.send_message(chat_id=CHAT_ID,
-                             text='~bot: stop run_etherscan')
+def callback_get_cold_walet_balance(context: CallbackContext):
+    get_cold_walet_balance()
 
 def main():
     updater = Updater(TELEGRAM_TOKEN, use_context=True)
     job_queue = updater.job_queue
-
-    # Запускаем нужных ботов в очередь задач
-    if START_INCOMING_BOT:
-        logger.info('Add incoming_bot to job queue ')
-        job_queue.run_repeating(callback_etherscan, interval=INTERVAL_INCOMING_BOT, first=0)
-    if START_WITHDRAWAL_BOT:
-        logger.info('Add withdrawal_bot to job queue ')
-        job_queue.run_repeating(callback_withdrawal, interval=INTERVAL_WITHDRAWAL_BOT, first=0)
 
     dp = updater.dispatcher
     start_handler = ConversationHandler(
@@ -116,6 +114,16 @@ def main():
         fallbacks=[CommandHandler('cancel', cancel)]
     )
     dp.add_handler(tokensend_handler)
+
+    get_balance_handler = ConversationHandler(
+        entry_points=[CommandHandler('getbalabce', start_getbalance_bot)],
+        states={
+            GETBAL: [MessageHandler(Filters.text, start_getbalance_bot)]
+        },
+        fallbacks=[CommandHandler('cancel', cancel)]
+    )
+    dp.add_handler(get_balance_handler)
+
 
     jobstat_handler = ConversationHandler(
         entry_points=[CommandHandler('jobstat', getjob)],

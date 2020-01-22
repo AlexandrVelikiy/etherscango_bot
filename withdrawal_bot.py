@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-from etherscango.models import  Withdrawals, connect_to_db
+from models import  Withdrawals, connect_to_db
 import logging
 import time, os
 from Crypto.Cipher import AES
@@ -8,13 +8,15 @@ from base64 import b64decode
 import json
 from web3.auto import w3
 from web3 import Web3, HTTPProvider
-from config import CHAT_ID
+import requests
 
 
-from config import DEBUG,CONTRACT_ADD, TIME_OUT, SQLALCHEMY_DATABASE_URI,LOG_PATH2, ETH_NODE, \
-                    OUT_WALLET, OUT_PRIVKEY, ETH_FEE, COLD_WALLET,ABI_FILE_PATH, MASTERPASS,\
-                TIME_OUT_AFTER_HTTPERROR_429,LOG_PATH1,TIME_OUT_TRANS_RECEIPT
 
+from config import DEBUG,CONTRACT_ADD, TIME_OUT, SQLALCHEMY_DATABASE_URI,LOG_PATH, ETH_NODE, \
+                    OUT_WALLET, OUT_PRIVKEY, ETH_FEE, COLD_WALLET,ABI_FILE_PATH, MASTERPASS,TIME_OUT_BETWEEN_REPEAT, TIME_OUT_TRANS_RECEIPT, LOG_PATH2
+
+
+from config import TELEGRAM_TOKEN,CHAT_ID
 
 logger = logging.getLogger(__file__)
 logger.setLevel(logging.DEBUG)
@@ -41,7 +43,12 @@ hashes = []
 pending = []
 all_trans_compleate = False
 
-
+def send_message(text):
+    try:
+        url = f'https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage?chat_id={CHAT_ID}&text={text}'
+        res = requests.get(url)
+    except:
+        logger.exception('send_message')
 
 def str_to_bytes(data):
     u_type = type(b''.decode('utf8'))
@@ -65,8 +72,7 @@ def decrypt(enc, password):
     return _unpad(data.decode())
 
 
-def chek_receipt_transaction(context=None):
-    logger = logging.getLogger(__file__)
+def chek_receipt_transaction():
     global all_trans_compleate
     try:
         session = connect_to_db(SQLALCHEMY_DATABASE_URI)
@@ -109,23 +115,19 @@ def chek_receipt_transaction(context=None):
             if len(failtrans) > 0:
                 logger.info(f'{len(failtrans)} transaction fail, repeat them')
             else:
-                message = f'All transaction complete'
-                logger.info(message)
-                if context:
-                    context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: '+ message)
-
+                logger.info(f'All transaction complete')
                 all_trans_compleate = True
             return True
 
-    except:
+    except Exception as e:
         logger.exception('chek_receipt_transaction')
     finally:
         session.close()
 
-def send_wtp_tokens(context=None):
+def send_wtp_tokens():
+    global out_nonce
     try:
-        global out_nonce
-        global all_trans_compleate
+        session = connect_to_db(SQLALCHEMY_DATABASE_URI)
 
         out_nonce = w3.eth.getTransactionCount(out_wallet)
         logger.info(f'out_wallet nouce {out_nonce}')
@@ -146,20 +148,8 @@ def send_wtp_tokens(context=None):
         logger.info(f'Out wallet balance {out_wallet_balance}')
         logger.info(f"Eth balance: {eth_balance}")
 
-        session = connect_to_db(SQLALCHEMY_DATABASE_URI)
-
         withdrawals = session.query(Withdrawals).filter(Withdrawals.status == 0).all()
-
-        message  = f'In table Withdrawals found {len(withdrawals)} wallets'
-        logger.info(message)
-        if context:
-            context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: '+ message)
-
-        if len(withdrawals) < 1:
-            # нет пожходящих транзакций
-            all_trans_compleate = True
-            return False
-
+        logger.info(f'In table Withdrawals found {len(withdrawals)} wallets')
         nonce = w3.eth.getTransactionCount(Web3.toChecksumAddress(out_wallet))
 
         for i, w in enumerate(withdrawals):
@@ -184,50 +174,44 @@ def send_wtp_tokens(context=None):
                 w.txhash = txhash.hex()
                 session.commit()
 
-                message = f'Произведён вывод {w.amount} wtp по адресу {w.wallet}'
-                if context:
-                    context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: ' + message)
-
+                send_message(f'withdrawal_bot said: Произведён вывод {w.amount} wtp по адресу {w.wallet}')
 
                 nonce = nonce +1
             except Exception as e:
                 message = f'Error {e}'
                 logger.error(message)
-                if context:
-                    context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: ' + message)
 
-        return True
-    except:
+    except Exception as e:
         logger.exception('send wtp')
+        send_message(f'withdrawal_bot said: {e}')
     finally:
         session.close()
 
-def run_withdrawal(context):
+def withdrawal():
     global all_trans_compleate
+    try:
+        while True:
+            all_trans_compleate = False
+            while not all_trans_compleate:
+                # отправляем токены
+                send_wtp_tokens()
+                # ждем
+                time.sleep(TIME_OUT_TRANS_RECEIPT)
+                # проверяем отправились ли транзакции
+                # если  нужно ждем
+                # если все отправленые то  all_trans_compleate = False
+                # если есто неуспешные то повторяем их
+                while not chek_receipt_transaction():
+                    # ждем 10
+                    time.sleep(TIME_OUT_TRANS_RECEIPT)
 
-    message = 'start withdrawal_bot'
-    logger.error(message)
-    if context:
-        context.bot.send_message(chat_id=CHAT_ID, text='withwdawal_bot: ' + message)
-
-    all_trans_compleate = False
-
-    while not all_trans_compleate:
-        # отправляем токены
-        if send_wtp_tokens(context):
-            # ждем
-            time.sleep(10)
-            # проверяем отправились ли транзакции
-            # если  нужно ждем
-            # если все отправленые то  all_trans_compleate = False
-            # если есто неуспешные то повторяем их
-            while not chek_receipt_transaction(context):
-                # ждем 10
-                time.sleep(10)
-
+            time.sleep(TIME_OUT_BETWEEN_REPEAT)
+    except:
+        logger.exception('withdrawal')
 
 def main():
-    run_withdrawal()
+    withdrawal()
+
 
 if __name__ == '__main__':
     main()
