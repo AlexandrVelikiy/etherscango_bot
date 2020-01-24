@@ -13,7 +13,7 @@ import requests
 
 
 from config import DEBUG,CONTRACT_ADD, TIME_OUT, SQLALCHEMY_DATABASE_URI,LOG_PATH, ETH_NODE, \
-                    OUT_WALLET, OUT_PRIVKEY, ETH_FEE, COLD_WALLET,ABI_FILE_PATH, MASTERPASS,TIME_OUT_BETWEEN_REPEAT, TIME_OUT_TRANS_RECEIPT, LOG_PATH2
+                    OUT_WALLET, OUT_PRIVKEY, ETH_FEE_WD, COLD_WALLET,ABI_FILE_PATH, MASTERPASS,TIME_OUT_BETWEEN_REPEAT, TIME_OUT_TRANS_RECEIPT, LOG_PATH2
 
 
 from config import TELEGRAM_TOKEN,CHAT_ID
@@ -162,7 +162,7 @@ def send_wtp_tokens():
             ).buildTransaction({
                 'chainId': 1,
                 'gas': 100000,
-                'gasPrice': w3.toWei(ETH_FEE, 'gwei'),
+                'gasPrice': w3.toWei(ETH_FEE_WD, 'gwei'),
                 'nonce': nonce,
             })
             signed_txn = w3.eth.account.signTransaction(txn, private_key=OUT_PRIVKEY)
