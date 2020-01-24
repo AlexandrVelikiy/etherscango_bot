@@ -93,6 +93,7 @@ def chek_receipt_transaction():
                         pend_tr.status = 1
                         pend_tr.txhash = ''
                         session.commit()
+                        send_message(f'withdrawal_bot said: Произведён вывод {pend_tr.amount} wtp по адресу {pend_tr.wallet}')
                     else:
                         # транзакция неуспешна
                         pend_tr.pending = 0
@@ -174,7 +175,7 @@ def send_wtp_tokens():
                 w.txhash = txhash.hex()
                 session.commit()
 
-                send_message(f'withdrawal_bot said: Произведён вывод {w.amount} wtp по адресу {w.wallet}')
+                #send_message(f'withdrawal_bot said: Произведён вывод {w.amount} wtp по адресу {w.wallet}')
 
                 nonce = nonce +1
             except Exception as e:
